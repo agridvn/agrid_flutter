@@ -1,0 +1,9 @@
+rootProject.name = 'agrid_flutter'
+
+// Include posthog-android project as composite build
+// Thay thế dependency com.posthog:posthog-android từ Maven bằng local project
+includeBuild('posthog-android') {
+    dependencySubstitution {
+        substitute module('com.posthog:posthog-android') using project(':posthog-android')
+    }
+}

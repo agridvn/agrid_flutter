@@ -1,0 +1,9 @@
+/.idea/
+/.flutter-plugins
+/.flutter-plugins-dependencies
+/.packages
+/pubspec.lock
+/.dart_tool/
+/ios/Podfile.lock
+/lib/generated_plugin_registrant.dart
+/.history/

@@ -1,6 +1,6 @@
 name: agrid_flutter
 description: Flutter implementation of Agrid client for iOS, Android and Web that inherits from Posthog
-version: 5.9.5+2
+version: 5.9.5+5
 homepage: https://www.posthog.com
 documentation: https://pub.dev/packages/agrid_flutter
 

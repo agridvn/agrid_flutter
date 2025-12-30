@@ -7,7 +7,7 @@ Future<void> main() async {
   // init WidgetsFlutterBinding if not yet
   /*
   agrid_project_api_key là API key của dự án Agrid của bạn
-  agrid_host là host Agrid bạn dùng, có thể dùng host demo: https://gw.track-asia.vn
+  agrid_host là host Agrid bạn dùng, có thể dùng host demo: https://gw.agrid.vn
   */
 
   WidgetsFlutterBinding.ensureInitialized();

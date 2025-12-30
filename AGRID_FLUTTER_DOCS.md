@@ -68,7 +68,7 @@ Tự động: thêm cấu hình vào `android/app/src/main/AndroidManifest.xml`:
   <application>
     <!-- ... other configuration ... 
     agrid_project_api_key là API key của dự án Agrid của bạn
-    agrid_host là host Agrid bạn dùng, có thể dùng host demo: https://gw.track-asia.vn
+    agrid_host là host Agrid bạn dùng, có thể dùng host demo: https://gw.agrid.vn
     -->
     <meta-data android:name="com.agrid.agrid.API_KEY" android:value="<agrid_project_api_key>" />
     <meta-data android:name="com.agrid.agrid.AGRID_HOST" android:value="agrid_host" />
@@ -101,7 +101,7 @@ Thủ công (nhiều tùy chỉnh hơn): đặt `AUTO_INIT = false` trong `Andro
 
 ```groovy
 def pubCachePath = System.getenv("PUB_CACHE") ?: "${System.getProperty("user.home")}/.pub-cache"
-def posthogAndroidPathFromPubCache = new File("${pubCachePath}/hosted/pub.dev/agrid_flutter-5.9.6/android/posthog-android")
+def posthogAndroidPathFromPubCache = new File("${pubCachePath}/hosted/pub.dev/agrid_flutter-5.9.5+5/android/posthog-android")
 if (posthogAndroidPathFromPubCache.exists()) {
     includeBuild(posthogAndroidPathFromPubCache.absolutePath) {
         dependencySubstitution {
@@ -122,7 +122,7 @@ Thêm cấu hình vào `ios/Runner/Info.plist` (iOS) hoặc file Info.plist tư�
 <dict>
   <!-- phần cấu hình khác 
   agrid_project_api_key là API key của dự án Agrid của bạn
-  agrid_host là host Agrid bạn dùng, có thể dùng host demo: https://gw.track-asia.vn
+  agrid_host là host Agrid bạn dùng, có thể dùng host demo: https://gw.agrid.vn
   -->
   <key>com.agrid.agrid.API_KEY</key>
   <string>agrid_project_api_key</string>
@@ -154,7 +154,7 @@ Với Web, thêm `Web snippet` vào thẻ `<head>` của `web/index.html`. Ví d
 ```html
 <!-- phần cấu hình khác 
 agrid_project_api_key là API key của dự án Agrid của bạn
-agrid_host là host Agrid bạn dùng, có thể dùng host demo: https://gw.track-asia.vn
+agrid_host là host Agrid bạn dùng, có thể dùng host demo: https://gw.agrid.vn
 -->
 <script async>
   !function(t,e){var o,n,p,r;e.__SV||(window.agrid=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="agrid",u.people=u.people||[],u.toString=function(t){var e="agrid";return"agrid"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys getNextSurveyStep onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.agrid||[]);
@@ -180,7 +180,7 @@ Future<void> main() async {
 
   /*
   agrid_project_api_key là API key của dự án Agrid của bạn
-  agrid_host là host Agrid bạn dùng, có thể dùng host demo: https://gw.track-asia.vn
+  agrid_host là host Agrid bạn dùng, có thể dùng host demo: https://gw.agrid.vn
   */
   final config = AgridConfig('agrid_project_api_key');
   config.host = 'agrid_host';
@@ -358,7 +358,7 @@ final isOut = await Agrid().isOptOut();
 ```dart
 /*
   agrid_project_api_key là API key của dự án Agrid của bạn
-  agrid_host là host Agrid bạn dùng, có thể dùng host demo: https://gw.track-asia.vn
+  agrid_host là host Agrid bạn dùng, có thể dùng host demo: https://gw.agrid.vn
 */
 final config = AgridConfig('agrid_project_api_key');
 config.host = 'agrid_host';

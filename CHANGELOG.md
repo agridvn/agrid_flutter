@@ -1,5 +1,9 @@
 ## Tiếp theo ...
 
+## 5.9.5+8
+
+- Điều chỉnh lại tài liệu hướng dẫn
+
 ## 5.9.5+6
 
 - Điều chỉnh lại tài liệu hướng dẫn

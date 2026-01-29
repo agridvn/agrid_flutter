@@ -1,6 +1,6 @@
 [![Package on pub.dev][pubdev_badge]][pubdev_link]
 
-# Thư viện Agrid Flutter
+# Thư viện theo dõi hành vi người dùng trên ứng dụng - Agrid Flutter
 
 ## Hướng dẫn tích hợp thư viện Agrid Flutter cho Flutter (tham khảo PostHog Flutter)
 
@@ -102,7 +102,7 @@ Thủ công (nhiều tùy chỉnh hơn): đặt `AUTO_INIT = false` trong `Andro
 
 ```groovy
 def pubCachePath = System.getenv("PUB_CACHE") ?: "${System.getProperty("user.home")}/.pub-cache"
-def posthogAndroidPathFromPubCache = new File("${pubCachePath}/hosted/pub.dev/agrid_flutter-5.9.5+6/android/posthog-android")
+def posthogAndroidPathFromPubCache = new File("${pubCachePath}/hosted/pub.dev/agrid_flutter-5.9.5+8/android/posthog-android")
 if (posthogAndroidPathFromPubCache.exists()) {
     includeBuild(posthogAndroidPathFromPubCache.absolutePath) {
         dependencySubstitution {

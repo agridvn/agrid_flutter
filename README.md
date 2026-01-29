@@ -1,8 +1,8 @@
 [![Package on pub.dev][pubdev_badge]][pubdev_link]
 
-# Agrid Flutter
+# Thư viện Agrid Flutter
 
-## Hướng dẫn tích hợp Agrid cho Flutter (tham khảo PostHog Flutter)
+## Hướng dẫn tích hợp thư viện Agrid Flutter cho Flutter (tham khảo PostHog Flutter)
 
 Tài liệu này mô phỏng cấu trúc và nội dung từ hướng dẫn chính thức của PostHog Flutter, được điều chỉnh cho `agrid_flutter`. Tham khảo tài liệu gốc tại: [PostHog Flutter docs](https://posthog.com/docs/libraries/flutter).
 
@@ -102,7 +102,7 @@ Thủ công (nhiều tùy chỉnh hơn): đặt `AUTO_INIT = false` trong `Andro
 
 ```groovy
 def pubCachePath = System.getenv("PUB_CACHE") ?: "${System.getProperty("user.home")}/.pub-cache"
-def posthogAndroidPathFromPubCache = new File("${pubCachePath}/hosted/pub.dev/agrid_flutter-5.9.5+5/android/posthog-android")
+def posthogAndroidPathFromPubCache = new File("${pubCachePath}/hosted/pub.dev/agrid_flutter-5.9.5+6/android/posthog-android")
 if (posthogAndroidPathFromPubCache.exists()) {
     includeBuild(posthogAndroidPathFromPubCache.absolutePath) {
         dependencySubstitution {
